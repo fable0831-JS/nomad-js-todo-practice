@@ -1,106 +1,138 @@
 .hidden {
-    display: none;
+  display: none;
+}
+
+#login-input {
+  width: 20vw;
+  height: 4vh;
+  font-size: 2vw;
+}
+
+#login-form input[type="submit"] {
+  height: 5vh;
+  font-size: 1.5vw;
 }
 
 img {
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
-    display:flex;
-    margin: 0 auto;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
 }
-
 
 #content {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 90vh;
 }
 
-#main-section{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25vw;
+#main-section {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25vw;
 }
 
 #clock {
-    font-size: 5vw;
-    color: white;
+  font-size: 6vw;
+  color: white;
 }
 
 #greeting {
-    font-size: 2vw;
-    color: white;
+  font-size: 3vw;
+  color: white;
 }
 
 #quote {
-    font-size: 1.5vw;
-    color: white;
+  font-size: 1.5vw;
+  color: white;
 }
 
-#todo-section{
-    display: flex;
-    flex-direction: column;
-    width: 24vw;
-    margin-right: 6vw;
+#todo-section {
+  display: flex;
+  flex-direction: column;
+  width: 24vw;
+  margin-right: 6vw;
 }
 
-#todo-form input[type="text"]{
-    height: 5vh;
-    width: 24vw;
-    font-size: 25px;
-    font-weight: bold;
-    border-radius: 10px;
-    background: transparent;
-    color: white;
-    border: 3px solid red;
+#todo-form input[type="text"] {
+  height: 5vh;
+  width: 24vw;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  border: 3px solid red;
 }
 
 #todo-list li {
-    margin: 0;
-    color:white;
-    padding-left: 40px;
-    font-size: 35px;
-    list-style: none;
-    background-image: url(/img/ghost.gif);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 35px;
+  margin: 0;
+  color: white;
+  padding-left: 40px;
+  font-size: 35px;
+  list-style: none;
+  background-image: url(/img/ghost.gif);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 35px;
 }
 
 #todo-list button {
-    padding-top: 15px;
-    margin-left: 10px;
-    background-image: url(/img/angel.png);
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: 35px;
+  padding-top: 15px;
+  margin-left: 10px;
+  background-image: url(/img/angel.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 35px;
 }
 
 #music-weather {
-    display: flex;
-    justify-content: space-between;
-    margin: 3vw 2vw 5vw 2vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 3vw 2vw 5vw 2vw;
 }
 
-#music-container{
-    color: white;
-    font-size: 30px;
+#weather {
+  margin-left: 10vw;
+  width: 30vw;
+  font-size: 2vw;
+  color: white;
 }
 
-#weather-container{
-    color: white;
-    font-size: 30px;
+#water {
+  width: 25vw;
 }
 
+#water input[type="checkbox"] {
+  display: none;
+}
+
+#water input[type="checkbox"] + label {
+  cursor: pointer;
+  margin-left: 1vw;
+  padding: 2vh 1vw 1vh 1vw;
+  background-repeat: no-repeat;
+  background-image: url("/img/water2.png");
+}
+
+#water input[type="checkbox"]:checked + label {
+  background-image: url("/img/blood2.png");
+  margin-left: 1vw;
+  padding: 2vh 1vw 1vh 1vw;
+}
+
+::placeholder {
+  color: red;
+}

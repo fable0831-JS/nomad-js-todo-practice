@@ -9,8 +9,23 @@
   </head>
   <body>
     <header id="music-weather">
-      <div id="music-container">여기는 음악</div>
-      <div id="wether-container">여기는 날씨</div>
+      <div id="music">
+          <audio autoplay controls><source src="/sound/A-really-dark-alley.mp3" type="audio/mp3"></audio>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <inpu id="water">
+          <input type="checkbox" id="redWater1"><label for="redWater1"></label></input>
+          <input type="checkbox" id="redWater2"><label for="redWater2"></label></input>
+          <input type="checkbox" id="redWater3"><label for="redWater3"></label></input>
+          <input type="checkbox" id="redWater4"><label for="redWater4"></label></input>
+          <input type="checkbox" id="redWater5"><label for="redWater5"></label></input>
+          <input type="checkbox" id="redWater6"><label for="redWater6"></label></input>
+          <input type="checkbox" id="redWater7"><label for="redWater7"></label></input>
+          <input type="checkbox" id="redWater8"><label for="redWater8"></label></input>
+      </form>
     </header>
     <main id="content">
       <section id="main-section">
@@ -44,7 +59,6 @@
     </main>
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
-    <script src="js/music.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>

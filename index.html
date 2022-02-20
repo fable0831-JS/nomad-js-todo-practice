@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>horror-todo</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="music"></div>
+      <div class="wheather"></div>
+    </header>
+    <main>
+      <section class="horror">
+        <h1 id="clock">00:00:00</h1>
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="10"
+            id="login-input"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <h3 id="greeting" class="hidden"></h3>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+      <section class="todo">
+        <form id="todo-form">
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

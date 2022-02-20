@@ -124,11 +124,11 @@ body {
   margin-left: 1vw;
   padding: 2vh 1vw 1vh 1vw;
   background-repeat: no-repeat;
-  background-image: url("/img/water2.png");
+  background-image: url("/img/water.png");
 }
 
 #water input[type="checkbox"]:checked + label {
-  background-image: url("/img/blood2.png");
+  background-image: url("/img/blood.png");
   margin-left: 1vw;
   padding: 2vh 1vw 1vh 1vw;
 }

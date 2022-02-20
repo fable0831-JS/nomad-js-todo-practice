@@ -2,6 +2,105 @@
     display: none;
 }
 
-body img {
-    display: flex;
+img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
+
+body {
+    display:flex;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 90vh;
+}
+
+#main-section{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25vw;
+}
+
+#clock {
+    font-size: 5vw;
+    color: white;
+}
+
+#greeting {
+    font-size: 2vw;
+    color: white;
+}
+
+#quote {
+    font-size: 1.5vw;
+    color: white;
+}
+
+#todo-section{
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    margin-right: 6vw;
+}
+
+#todo-form input[type="text"]{
+    height: 5vh;
+    width: 24vw;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border: 3px solid red;
+}
+
+#todo-list li {
+    margin: 0;
+    color:white;
+    padding-left: 40px;
+    font-size: 35px;
+    list-style: none;
+    background-image: url(/img/ghost.gif);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+
+#todo-list button {
+    padding-top: 15px;
+    margin-left: 10px;
+    background-image: url(/img/angel.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+
+#music-weather {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 2vw 5vw 2vw;
+}
+
+#music-container{
+    color: white;
+    font-size: 30px;
+}
+
+#weather-container{
+    color: white;
+    font-size: 30px;
+}
+
